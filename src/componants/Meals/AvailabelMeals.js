@@ -9,7 +9,7 @@ const [loading ,setloading]=useState(false)
 const [errorhttp ,seterrorhttp]=useState(false)
 const fetchMeals=async()=>{
   setloading(true)
-  const res= await fetch('https://addorder-8a4e6-default-rtdb.firebaseio.com/Meals.json')
+  const res= await fetch('https://tasks-aca0b-default-rtdb.firebaseio.com/meals.json')
   if(!res.ok)  {
     throw new Error('faild to fetch')
   }
